@@ -1,3 +1,6 @@
 [submodule "libs/ArduinoCore"]
 	path = libs/ArduinoCore
 	url = .\\libs\\ArduinoCore
+[submodule "cmake"]
+	path = cmake
+	url = ./cmake
