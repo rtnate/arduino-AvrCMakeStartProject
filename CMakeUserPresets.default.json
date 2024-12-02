@@ -1,0 +1,27 @@
+{
+    "version": 4,
+    "configurePresets": [
+      {
+        "name": "arduino",
+        "displayName": "Arduino Standard",
+        "description": "Arduino Standard build using Ninja generator",
+        "inherits": "arduino-default",
+        "cacheVariables": {
+          "ARDUINO_PATH": "{YOUR PATH TO ARDUINO HERE}",
+          "AVR_GCC_VERSION": "{YOUR GCC VERSION HERE (under tools/avr-gcc}",
+          "AVRDUDE_VERSION": "{YOUR AVRDUDE VERSION HERE (under tools/avrdude}"
+        }
+      },
+      {
+        "name": "arduino-debug",
+        "displayName": "Arduino Debug",
+        "description": "Arduino Debug build using Ninja generator",
+        "inherits": "arduino-default-debug",
+        "cacheVariables": {
+          "ARDUINO_PATH": "{YOUR PATH TO ARDUINO HERE}",
+          "AVR_GCC_VERSION": "{YOUR GCC VERSION HERE (under tools/avr-gcc}",
+          "AVRDUDE_VERSION": "{YOUR AVRDUDE VERSION HERE (under tools/avrdude}"
+        }
+      }
+    ]
+}

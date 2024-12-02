@@ -1,0 +1,35 @@
+{
+    "version": 4,
+    "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 23,
+      "patch": 0
+    },
+    "configurePresets": [
+      {
+        "name": "arduino-default",
+        "displayName": "Arduino (default) Config",
+        "description": "Arduino build using Ninja generator",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/arduino",
+        "cacheVariables": {
+          "CMAKE_TOOLCHAIN_FILE": "cmake/toolchain/avr.toolchain.cmake",
+          "CMAKE_BUILD_TYPE": "MinSizeRel"
+        }
+      },
+      {
+        "name": "arduino-default-debug",
+        "displayName": "Arduino Debug (default) Config",
+        "description": "Arduino Debug build using Ninja generator",
+        "generator": "Ninja",
+        "inherits": "arduino-default",
+        "binaryDir": "${sourceDir}/build/debug",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug"
+        }
+      }
+    ]
+}
+
+
+    

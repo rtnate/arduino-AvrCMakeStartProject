@@ -1,0 +1,3 @@
+[submodule "libs/ArduinoCore"]
+	path = libs/ArduinoCore
+	url = .\\libs\\ArduinoCore
